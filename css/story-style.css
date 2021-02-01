@@ -4,19 +4,8 @@ html {
 }
 
 body {
-	margin: 500px;
- 	padding:20%;
  	color:#FFFFFF;
-}
-
-div, iframe {
-    width: 100px;
-    height: 50px;
-    margin: 0 auto;
-    background-color: #777;
-}
-
-iframe {
-    display: block;
-    border-style:none;
+ 	padding-top: 50px;
+ 	padding-right: 30%;
+ 	padding-left: 30%;
 }
