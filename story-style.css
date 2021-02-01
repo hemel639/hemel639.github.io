@@ -4,8 +4,9 @@ html {
 }
 
 body {
-  padding:5rem 0;
-  color:#FFFFFF;
+	margin: 500px;
+ 	padding:20%;
+ 	color:#FFFFFF;
 }
 
 div, iframe {
