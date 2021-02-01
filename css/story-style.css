@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap:wght@300..700')
 
 html {
-
+	font-family: 'Comfortaa', sans-serif;
 }
 
 body {
@@ -8,4 +9,9 @@ body {
  	padding-top: 50px;
  	padding-right: 35%;
  	padding-left: 35%;
+}
+
+h1 {
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 30px ;
 }
