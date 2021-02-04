@@ -1,7 +1,63 @@
-html {
-	background: grey;
+
+@font-face {
+	font-family: 'kobe';
+	scr: 	url(../assets/kobe/kobeweb-regular.woff2) format('woff.2'),
+			url(../assets/kobe/kobeweb-regular.woff) format('woff');
 }
 
-h1{
-	color: white;
+html {
+	font-family: 'kobe';
+	
+}
+
+body {
+	margin: 5rem;
+	padding-right:10%;
+
+}
+
+main {
+  display:grid;
+  grid-template-columns: 4(min-content);
+  grid-template-rows: auto;
+  padding-top: 10%;
+  padding-right: 10%;
+}
+
+h4 {
+	font-family: 'kobe';
+	font-size: 60px;
+}
+
+a {
+	color: black;
+	font-size: 30px;
+	line-height: 40px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.homeimg {
+	grid-column: 1/2;
+	grid-row:1 /2;
+
+}
+
+.hometext {
+	grid-column: 2/3;
+	grid-row:1 /2;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.title {
+	font-family: 'kobe';
+	font-size: 70px;
+	margin: 10px;
+
 }
