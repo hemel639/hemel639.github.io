@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap');
+
+@font-face {
+	font-family: 'noe display regular';
+	scr: 	url(../assets/noe/NoeDisplayRegular.woff2) format('woff2'),
+			url(../assets/noe/NoeDisplayRegular.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'noe display regular';
+	scr: 	url(../assets/noe/NoeDisplayRegularItalic.woff2) format('woff2'),
+			url(../assets/noe/NoeDisplayRegularItalic.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'noe display';
+	scr: 	url(../assets/noe/NoeDisplayMediumItalic.woff2) format('woff2'),
+			url(../assets/noe/NoeDisplayMediumItalic.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'noe display medium';
+	scr: 	url(../assets/noe/NoeDisplayMedium.woff2) format('woff2'),
+			url(../assets/noe/NoeDisplayMedium.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'noe display bold';
+	scr: 	url(../assets/noe/NoeDisplayBold.woff2) format('woff2'),
+			url(../assets/noe/NoeDisplayBold.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'noe display bold';
+	scr: 	url(../assets/noe/NoeDisplayBoldItalic.woff2) format('woff2'),
+			url(../assets/noe/NoeDisplayBoldItalic.woff) format('woff');
+}
+
+body {
+	padding-top: 50px;
+	padding-right: 20%;
+	padding-left: 20%;
+	padding-bottom: 50px;
+
+}
+
+html {
+	font-family: 'Crimson Text', serif;
+	font-size: 20px;
+}
+
+h1 {
+	font-family: 'noe display regular';
+	font-style: italic;
+	font-size: 60px;
+}
+
+.title {
+	font-family: 'noe display bold';
+	font-style: italic;
+	font-size: 80px;
+	margin-bottom: 20px;
+}
+
+.subhead1 {
+	font-family: 'noe display bold';
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+
+.subhead2 {
+	font-family: 'noe display medium';
+	font-size: 30px;
+	margin-bottom: 5px;
+}
+
+.subhead3 {
+	font-family: 'noe display regular';
+	font-size: 25px;
+	margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+	
