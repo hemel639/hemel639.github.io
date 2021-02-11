@@ -1,12 +1,12 @@
 
 @font-face {
-	font-family: 'kobe';
+	font-family: 'Kobe';
 	scr: 	url(../assets/kobe/Kobe-Regular.woff2) format('woff2'),
 			url(../assets/kobe/Kobe-Regular.woff) format('woff');
 }
 
 html {
-	font-family: 'kobe';
+	font-family: 'Kobe';
 	
 }
 
@@ -25,7 +25,7 @@ main {
 }
 
 h4 {
-	font-family: 'kobe';
+	font-family: 'Kobe';
 	font-size: 60px;
 }
 
@@ -56,7 +56,7 @@ a {
 }
 
 .title {
-	font-family: 'kobe';
+	font-family: 'Kobe';
 	font-size: 70px;
 	margin: 10px;
 
