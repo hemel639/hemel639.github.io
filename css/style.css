@@ -1,8 +1,8 @@
 
 @font-face {
 	font-family: 'kobe';
-	scr: 	url(../assets/kobe/kobeweb-regular.woff2) format('woff2'),
-			url(../assets/kobe/kobeweb-regular.woff) format('woff');
+	scr: 	url(../assets/kobe/Kobe-Regular.woff2) format('woff2'),
+			url(../assets/kobe/Kobe-Regular.woff) format('woff');
 }
 
 html {
