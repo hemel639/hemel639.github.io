@@ -3,7 +3,7 @@
 
 @font-face {
 	font-family: 'zigzag';
-	scr: 	url(../assets/zigzag/ZIGZAG-Rounded.woff2) format('woff2'),
+	src: 	url(../assets/zigzag/ZIGZAG-Rounded.woff2) format('woff2'),
 			url(../assets/zigzag/ZIGZAG-Rounded.woff) format('woff');
 
 }
