@@ -1,0 +1,32 @@
+
+@font-face {
+	font-family: 'Sabon';
+	src: 	url(../../assets/sabon/Sabon-Roman.woff2) format('woff2'),
+			url(../../assets/sabon/Sabon-Roman.woff) format('woff');
+
+}
+@font-face {
+	font-family: 'Sabon IT';
+	src: 	url(../../assets/sabon/Sabon-italic.woff2) format('woff2'),
+			url(../../assets/sabon/Sabon-italic.woff) format('woff');
+
+}
+
+html {
+	font-family: Sabon, serif;
+	
+}
+
+body {
+	margin: 5rem;
+	padding-right:10%;
+
+}
+
+main {
+  display:grid;
+  grid-template-columns: 4(min-content);
+  grid-template-rows: auto;
+  padding-top: 10%;
+  padding-right: 10%;
+}
