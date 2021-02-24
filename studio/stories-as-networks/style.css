@@ -14,19 +14,54 @@
 
 html {
 	font-family: Sabon, serif;
-	
+	color: #D2B898;	
 }
 
 body {
-	margin: 5rem;
-	padding-right:10%;
+	margin: 30px;
+	background-color: #210E0B;
 
 }
 
-main {
-  display:grid;
-  grid-template-columns: 4(min-content);
-  grid-template-rows: auto;
-  padding-top: 10%;
-  padding-right: 10%;
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 150px 1fr 1fr 1fr 1fr;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 3;
+}
+
+.title {
+	font-size: 50px;
+	text-align: center;
+}
+
+.bodytext {
+	font-size:35px;
+	grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.bodytext2 {
+	font-size:35px;
+	grid-column-start: 2;
+    grid-column-end: 5;
+	grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+a {
+	color: #D2B898;
+	text-decoration: none;
+}
+
