@@ -54,7 +54,7 @@ body {
 }
 
 .bodytext {
-	font-size:30px;
+	font-size:35px;
 	grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 2;
@@ -66,7 +66,7 @@ p {
 }
 
 .bodytext2 {
-	font-size:30px;
+	font-size:35px;
 	grid-column-start: 2;
     grid-column-end: 5;
 	grid-row-start: 5;
@@ -76,7 +76,7 @@ p {
 }
 
 .bodytext3 {
-	font-size:30px;
+	font-size:35px;
 	grid-column-start: 2;
     grid-column-end: 5;
 	grid-row-start: 2;
@@ -91,6 +91,7 @@ a {
 .cursor {
 	cursor: url(../../assets/cursor2.png), auto;
 	overflow: visible;
+	height: 100vh;
 }
 
 
@@ -111,28 +112,22 @@ a {
 }
 
 .colorchange {
-    background: linear-gradient(45deg, #bfa18b, #957157, #645042);
+    background: linear-gradient(270deg, #bfa18b, #957157, #645042);
     background-size: 600% 600%;
-    -webkit-animation: AnimationName 10s ease infinite;
-    -moz-animation: AnimationName 10s ease infinite;
-    animation: AnimationName 10s ease infinite;
-    margin-bottom:50px;
+
+    -webkit-animation: AnimationName 11s ease infinite;
+    animation: AnimationName 11s ease infinite;
 }
 
 @-webkit-keyframes AnimationName {
-    0%{background-position:82% 0%}
-    50%{background-position:19% 100%}
-    100%{background-position:82% 0%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:82% 0%}
-    50%{background-position:19% 100%}
-    100%{background-position:82% 0%}
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 @keyframes AnimationName {
-    0%{background-position:82% 0%}
-    50%{background-position:19% 100%}
-    100%{background-position:82% 0%}
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 
