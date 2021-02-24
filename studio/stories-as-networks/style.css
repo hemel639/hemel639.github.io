@@ -14,11 +14,13 @@
 
 html {
 	font-family: Sabon, serif;
-	color: #D2B898;	
+	color: #D2B898;
+	margin-bottom: 50px;
 }
 
 body {
-	margin: 30px;
+	margin: 50px;
+	margin-bottom: 50px;
 	background-color: #210E0B;
 
 }
@@ -27,6 +29,13 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: 150px 1fr 1fr 1fr 1fr;
+}
+
+.grid2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 150px 1fr 1fr;
+	margin-bottom: 50px;
 }
 
 .container {
@@ -45,23 +54,93 @@ body {
 }
 
 .bodytext {
-	font-size:35px;
+	font-size:30px;
 	grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 3;
 }
 
+p {
+	margin:0;
+}
+
 .bodytext2 {
-	font-size:35px;
+	font-size:30px;
 	grid-column-start: 2;
     grid-column-end: 5;
 	grid-row-start: 5;
     grid-row-end: 6;
+    margin-left: 150px;
+    margin-bottom: 50px;
+}
+
+.bodytext3 {
+	font-size:30px;
+	grid-column-start: 2;
+    grid-column-end: 5;
+	grid-row-start: 2;
+    grid-row-end: 4;
 }
 
 a {
 	color: #D2B898;
 	text-decoration: none;
 }
+
+.cursor {
+	cursor: url(../../assets/cursor2.png), auto;
+	overflow: visible;
+}
+
+
+@keyframes beauty { 
+    0% { 
+    	transform: translateY(0); 
+        } 
+    100% {
+    	transform: translateY(+100px);
+    }
+}
+
+.beauty {
+	position: fixed;
+	animation: beauty 1s linear infinite;
+	animation-play-state: paused;
+	animation-delay: calc(var(--scroll) * -1s);
+}
+
+.colorchange {
+    background: linear-gradient(45deg, #bfa18b, #957157, #645042);
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+    margin-bottom:50px;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:82% 0%}
+    50%{background-position:19% 100%}
+    100%{background-position:82% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:82% 0%}
+    50%{background-position:19% 100%}
+    100%{background-position:82% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:82% 0%}
+    50%{background-position:19% 100%}
+    100%{background-position:82% 0%}
+}
+
+
+
+
+
+
+
+
+
 
