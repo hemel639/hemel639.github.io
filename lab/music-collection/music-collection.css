@@ -1,0 +1,117 @@
+
+@font-face {
+	font-family: 'Kobe';
+	src: 	url(../assets/kobe/Kobe-Regular.woff2) format('woff2'),
+			url(../assets/kobe/Kobe-Regular.woff) format('woff');
+
+}
+
+html {
+	font-family: Helvetica, sans-serif;
+	font-size: 50px;
+	margin: 20px;
+}
+
+.grid {
+	display: grid;
+   	grid-template-columns: 150px 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 150px auto;
+	grid-gap: 20px;
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 60px;
+    text-align-last: center;
+    font-family:kobe;
+}
+
+.controls {
+	grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    font-size: 20px;
+}
+
+.dot {
+  height: 30px;
+  width: 30px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 25px;
+ }
+
+img {
+	max-height: 200px;
+	width: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.who {
+  border: 1px solid #ccc;
+  display: none;
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.album:hover .who {
+  display: block;
+  align-content: center;
+}
+
+
+
+@media screen and (max-width: 500px){
+	.controls {
+	grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    font-size: 20px;
+    align-items: center;
+	}
+	.grid {
+	display: grid;
+   	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto;
+	grid-gap: 20px;
+	}
+	.header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 40px;
+    text-align-last: center;
+	}
+	img {
+	max-height:140px;
+	}
+	.dot {
+	height: 20px;
+	width: 20px;
+	background-color: black;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 7px;
+	}
+	html {
+	margin:15px;
+	}
+ }
+
+
+
+
+
+
+
+
