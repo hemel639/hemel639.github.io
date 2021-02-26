@@ -1,11 +1,4 @@
 
-@font-face {
-	font-family: 'Kobe';
-	src: 	url(../assets/kobe/Kobe-Regular.woff2) format('woff2'),
-			url(../assets/kobe/Kobe-Regular.woff) format('woff');
-
-}
-
 html {
 	font-family: Helvetica, sans-serif;
 	font-size: 50px;
