@@ -9,14 +9,15 @@
 html {
 	font-family: Helvetica, sans-serif;
 	font-size: 50px;
-	margin: 20px;
+	margin: 10px;
+  margin-top:0;
 }
 
 .grid {
 	display: grid;
-   	grid-template-columns: 150px 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 150px 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: 150px auto;
-	grid-gap: 20px;
+	grid-gap: 10px;
 }
 
 .header {
@@ -26,7 +27,9 @@ html {
     grid-row-end: 2;
     font-size: 60px;
     text-align-last: center;
-    font-family:kobe;
+    text-transform: uppercase;
+    font-weight:lighter;
+    margin:0;
 }
 
 .controls {
@@ -47,16 +50,21 @@ html {
  }
 
 img {
-	max-height: 200px;
+	max-height: 180px;
 	width: auto;
     display: block;
     object-fit: cover;
 }
 
 .who {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
   border: 1px solid #ccc;
   display: none;
-  font-size: 10px;
+  font-size: 40px;
   margin-top: 10px;
   padding: 5px;
   text-transform: uppercase;
