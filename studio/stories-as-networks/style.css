@@ -1,4 +1,5 @@
 
+
 @font-face {
 	font-family: 'Sabon';
 	src: 	url(../../assets/sabon/Sabon-Roman.woff2) format('woff2'),
@@ -21,6 +22,14 @@ body {
 	background-color: #210E0B;
 	color: #D2B898;
 
+}
+
+::-moz-selection { /* Code for Firefox */
+  background: #988268;
+}
+
+::selection {
+  background: #988268;
 }
 
 .grid {
@@ -96,7 +105,6 @@ a {
 	height: 100vh;
 }
 
-
 @keyframes beauty { 
     0% { 
     	transform: translateY(0); 
@@ -135,10 +143,11 @@ a {
 .shadow1 {
 	position: absolute;
 	margin: 0 auto;
-    left: 0;
-    right: 0;
-    top:0;
-    animation: shadowchangetop 20s ease infinite;
+  left: 0;
+  right: 0;
+  top:0;
+  animation: shadowchangetop 20s ease infinite;
+  z-index:-1;
 }
 
 .shadow2 {
@@ -148,6 +157,7 @@ a {
     right: 0;
     bottom:0;
     animation: shadowchangebottom 20s ease infinite;
+    z-index:-1;
 }
 
 @keyframes shadowchangetop { 
@@ -174,12 +184,27 @@ a {
     }
 }
 
+#dogPic, #catPic {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: red;
+  top: 10px;
+  left: 10px;
+}
 
 
+audio {
+  filter: saturate(5) sepia(20) grayscale(0.4);
+}
 
+.shadowsvg {
+  z-index: 0;
+}
 
-
-
+.arrow {
+  z-index: 3;
+}
 
 @media screen and (max-width: 800px) {
 	body {
@@ -187,7 +212,7 @@ a {
 	}
   .bodytext {
     font-size:25px;
-	grid-column-start: 1;
+	  grid-column-start: 1;
     grid-column-end: 6;
     grid-row-start: 2;
     grid-row-end: 4;
@@ -255,9 +280,6 @@ a {
     	transform: translateY(+10px);
     }
 }
-
-
-
 
 }
 
