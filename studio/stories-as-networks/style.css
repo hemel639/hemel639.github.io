@@ -14,14 +14,12 @@
 
 html {
 	font-family: Sabon, serif;
-	color: #D2B898;
-	margin-bottom: 50px;
 }
 
 body {
 	margin: 50px;
-	margin-bottom: 50px;
 	background-color: #210E0B;
+	color: #D2B898;
 
 }
 
@@ -35,7 +33,6 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: 150px 1fr 1fr;
-	margin-bottom: 50px;
 }
 
 .container {
@@ -51,6 +48,11 @@ body {
 .title {
 	font-size: 50px;
 	text-align: center;
+}
+
+.clock {
+	grid-column-start: 5;
+    text-align: end;
 }
 
 .bodytext {
@@ -89,7 +91,7 @@ a {
 }
 
 .cursor {
-	cursor: url(../../assets/cursor2.png), auto;
+	cursor: url(../../assets/cursor2.png) 42 42, auto;
 	overflow: visible;
 	height: 100vh;
 }
@@ -109,30 +111,155 @@ a {
 	animation: beauty 1s linear infinite;
 	animation-play-state: paused;
 	animation-delay: calc(var(--scroll) * -1s);
+	grid-column-end:2;
 }
 
 .colorchange {
     background: linear-gradient(270deg, #bfa18b, #957157, #645042);
     background-size: 600% 600%;
-
-    -webkit-animation: AnimationName 11s ease infinite;
-    animation: AnimationName 11s ease infinite;
+    -webkit-animation: ColorChange 11s ease infinite;
+    animation: ColorChange 11s ease infinite;
 }
 
-@-webkit-keyframes AnimationName {
+@-webkit-keyframes ColorChange {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
-@keyframes AnimationName {
+@keyframes ColorChange {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
 
+.shadow1 {
+	position: absolute;
+	margin: 0 auto;
+    left: 0;
+    right: 0;
+    top:0;
+    animation: shadowchangetop 20s ease infinite;
+}
+
+.shadow2 {
+	position: absolute;
+	margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom:0;
+    animation: shadowchangebottom 20s ease infinite;
+}
+
+@keyframes shadowchangetop { 
+    0% { 
+    	transform: translateY(0);
+    }
+    50% {
+    	transform: translateY(-100px);
+    }
+    100% {
+    	transform: translateY(0);
+    }
+}
+
+@keyframes shadowchangebottom { 
+   0% { 
+    	transform: translateY(+50px);
+    }
+    80% {
+    	transform: translateY(+200px);
+    }
+    100% {
+    	transform: translateY(+50px);
+    }
+}
 
 
 
+
+
+
+
+
+@media screen and (max-width: 800px) {
+	body {
+	margin:30px;
+	}
+  .bodytext {
+    font-size:25px;
+	grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+  .toptitle {
+  	grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .bodytext2 {
+	font-size:25px;
+	grid-column-start: 1;
+    grid-column-end: 6;
+	grid-row-start: 5;
+    grid-row-end: 6;
+    margin-left: 100px;
+    margin-bottom: 50px;
+  }
+  .bodytext3 {
+	font-size:25px;
+	grid-column-start: 1;
+    grid-column-end: 6;
+	grid-row-start: 2;
+    grid-row-end: 4;
+  }
+   .title {
+   	font-size:40px;
+  }
+   .shadow1 {
+	position: absolute;
+	margin: 0 auto;
+    left: 0;
+    right: 0;
+    top:0;
+    animation: shadowchangetop 20s ease infinite;
+  }
+   .shadow2 {
+	position: absolute;
+	margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom:0;
+    animation: shadowchangebottom 20s ease infinite;
+  }
+
+@keyframes shadowchangetop { 
+    0% { 
+    	transform: translateY(0);
+    }
+    50% {
+    	transform: translateY(-30px);
+    }
+    100% {
+    	transform: translateY(0);
+    }
+}
+
+@keyframes shadowchangebottom { 
+   0% { 
+    	transform: translateY(+10px);
+    }
+    80% {
+    	transform: translateY(+50px);
+    }
+    100% {
+    	transform: translateY(+10px);
+    }
+}
+
+
+
+
+}
 
 
 
