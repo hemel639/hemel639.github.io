@@ -1,11 +1,11 @@
 var name ='Lara';
 console.log(name);
 //
-var MyFavNumber = 4;
-console.log(MyFavNumber);
+var myFavNumber = 4;
+console.log(myFavNumber);
 //
-const num = 15;
-console.log(num.toString());
+var myFavNumber ='4';
+console.log(myFavNumber);
 //
 var here = ('true');
 console.log('here');
@@ -37,19 +37,26 @@ console.log(display);
 //
 var maryPoppins = 'supercalifragilisticexpialidocious';
 console.log(maryPoppins.length);
-//
-console.log(firstName) == console.log(lastName);
-//
-var my_things = ['a', 'a', 'a'];
-my_things.forEach(function(item) {
-  console.log(item);
-});
+// 
+function isEqual() 
+{ 
+ var first = 'lara'; 
+ var last = 'hemels'; 
+
+  if(first.length == last.length) 
+   return console.log(true); 
+  else console.log(false);
+}
+// 
+const array = ['L', 'a', 'r', 'a']
+array.forEach(item => console.log('Looooops'));
+
 //
 var time = new Date() .getHours();
 if (time >= 19 && time <= 21.40) {
-   console.log('yes');
+   console.log("It is between 7 and 9.40!");
 } else {
-   console.log('no');
+   console.log("It's not between 7 and 9.40");
 }
 //
 let currentDate = new Date();
@@ -68,14 +75,31 @@ if ( currentDate.getDay() == 4) {
 if ( currentDate.getDay() == 5) {
   console.log('Friday :)');
   }
-else {
+if ( currentDate.getDay() == 6) {
+  console.log('Weekend :D');
+  }
+if ( currentDate.getDay() == 7) {
   console.log('Weekend :D');
 }
 //
-console.log("I'm very confused")
 
 
+var restaurants =(['Taiko', 'Emporio', 'Bar Fisk']);
+console.log(restaurants);
 
+var things =(['Travel', 'Travel', 'Travel']);
+console.log(things);
+
+var nyc =(['LES', 'West Village', 'Soho']);
+console.log(nyc);
+
+var movies =(['Beautiful Boy', 'Whiplash', 'Moonlight']);
+console.log(movies);
+
+var various =[restaurants, things, nyc, movies]
+console.log(various);
+
+console.log("I'm very confused?");
 
 
 
